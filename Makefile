@@ -1,12 +1,13 @@
 KEY_FILE:=gcloud-service-account-secret.json
-PROJECT_ID:=singular-hash-228518
-K8s_CLUSTER:=standard-cluster-1
-ZONE:=us-west1-a
+PROJECT_ID:=assure-dev
+K8s_CLUSTER:=demo-guardian-assure-cluster
+ZONE:=us-central1-c
 
 IMAGE_NAME:=travis-k8s-demo
 IMAGE_VERSION:=v1
 
 gauth:
+    @echo $GCLOUD_SERVICE_KEY | base64 --decode -i > ${HOME}/credentials.json
 	@gcloud auth activate-service-account --key-file ${KEY_FILE}
 
 gconfig:

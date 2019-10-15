@@ -1,3 +1,4 @@
 .DS_Store
 gcloud-service-account-secret.json
 node_modules/*
+.idea
