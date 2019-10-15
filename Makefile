@@ -1,4 +1,3 @@
-KEY_FILE:=gcloud-service-account-secret.json
 PROJECT_ID:=assure-dev
 K8s_CLUSTER:=demo-guardian-assure-cluster
 ZONE:=us-central1-c
@@ -8,7 +7,7 @@ IMAGE_VERSION:=v1
 
 gauth:
     @echo $GCLOUD_SERVICE_KEY | base64 --decode -i > ${HOME}/credentials.json
-	@gcloud auth activate-service-account --key-file ${KEY_FILE}
+	@gcloud auth activate-service-account --key-file credentials
 
 gconfig:
 	@gcloud config set project $(PROJECT_ID)
