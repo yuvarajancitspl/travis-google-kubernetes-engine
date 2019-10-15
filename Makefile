@@ -6,8 +6,7 @@ IMAGE_NAME:=travis-k8s-demo
 IMAGE_VERSION:=v1
 
 gauth:
-    @echo $GCLOUD_SERVICE_KEY | base64 --decode -i > ${HOME}/credentials.json
-	@gcloud auth activate-service-account --key-file credentials
+	@gcloud auth activate-service-account --key-file credentials.json
 
 gconfig:
 	@gcloud config set project $(PROJECT_ID)
