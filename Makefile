@@ -17,8 +17,8 @@ gconfig:
 	@gcloud auth configure-docker
 
 build:
-    @gcloud config list
-    @gcloud config get-value project
+	@gcloud config list
+	@gcloud config get-value project
 	@gcloud builds submit --tag gcr.io/$(PROJECT_ID)/$(IMAGE_NAME):$(IMAGE_VERSION) .
 
 run:
