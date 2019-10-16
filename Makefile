@@ -1,4 +1,4 @@
-PROJECT_ID:=assure-dev
+PROJECT_ID:=ci-cd-dev-test
 K8s_CLUSTER:=demo-guardian-assure-cluster
 ZONE:=us-central1-c
 
