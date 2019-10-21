@@ -10,11 +10,6 @@ gauth:
 
 gconfig:
 	@gcloud config set project $(PROJECT_ID)
-# 	@gcloud container clusters \
-# 		get-credentials $(K8s_CLUSTER) \
-# 		--zone $(ZONE) \
-# 		--project $(PROJECT_ID)
-# 	@gcloud auth configure-docker
 
 build:
 	@gcloud config list
