@@ -1,5 +1,4 @@
 PROJECT_ID:=ci-cd-dev-test
-K8s_CLUSTER:=demo-guardian-assure-cluster
 ZONE:=us-central1-c
 
 IMAGE_NAME:=travis-k8s-demo

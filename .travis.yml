@@ -7,7 +7,6 @@ cache:
   # We cache the SDK so we don't have to download it again on subsequent builds.
   - $HOME/google-cloud-sdk
   - /home/travis
-  - /usr/lib/google-cloud-sdk
 
 services:
 - docker
