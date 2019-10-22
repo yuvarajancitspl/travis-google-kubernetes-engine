@@ -14,4 +14,4 @@ source $HOME/google-cloud-sdk/path.bash.inc
 # Make sure kubectl is updated to latest version
 gcloud components update kubectl
 echo $GCLOUD_SERVICE_KEY | base64 --decode -i > credentials.json
-make gauth gconfig build push deploy
+make gauth gconfig deploy
