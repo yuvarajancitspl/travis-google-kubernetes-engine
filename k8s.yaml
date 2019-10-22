@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: travis-k8s-demo
-        image: gcr.io/cd-dev-test/travis-k8s-demo:v1
+        image: gcr.io/ci-cd-dev-test/travis-k8s-demo:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
