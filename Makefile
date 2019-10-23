@@ -27,4 +27,4 @@ deploy: gconfig
 	@kubectl get ns
 	@kubectl apply -f k8s.yaml
 # https://github.com/kubernetes/kubernetes/issues/27081#issuecomment-238078103
-	@kubectl patch deployment $(IMAGE_NAME) -p "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\"}}}}}"
+	@kubectl -n travis patch deployment $(IMAGE_NAME) -p "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\"}}}}}"
